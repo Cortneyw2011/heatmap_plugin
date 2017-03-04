@@ -10,7 +10,7 @@
 		showTab.apply(currentTab.get(0));
 		$('#myGallery').spacegallery({loadingClass: 'loading'});
 	};
-	
+
 	var showTab = function(e) {
 		var tabIndex = $('ul.navigationTabs a')
 							.removeClass('active')
@@ -23,6 +23,6 @@
 				.eq(tabIndex)
 				.show();
 	};
-	
+
 	EYE.register(initLayout, 'init');
 })(jQuery)
